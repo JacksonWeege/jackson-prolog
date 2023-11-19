@@ -1,0 +1,16 @@
+cidade_pais(paris, franca).
+cidade_pais(londres, reino_unido).
+cidade_pais(berlim, alemanha).
+cidade_pais(tokyo, japao).
+cidade_pais(nova_york, estados_unidos).
+cidade_pais(los_angeles, estados_unidos).
+cidade_pais(miami, estados_unidos).
+cidade_pais(boston, estados_unidos).
+cidade_pais(rio_de_janeiro, brasil).
+cidade_pais(rio_do_sul, brasil).
+
+cidades_do_pais(Pais, ListaCidades) :-
+    findall(Cidade, cidade_pais(Cidade, Pais), ListaCidades).
+
+/* cidades_do_pais(estados_unidos, Cidades),
+   write(Cidades). */
